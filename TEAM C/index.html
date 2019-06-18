@@ -40,18 +40,46 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><button type="button" class="btn btn-light" id="sign">Sign In</button></a>
+                        <a class="nav-link" href="#"><button type="button" class="btn btn-light" id="sign"
+                            data-toggle="modal" data-target="#LoginModal">Sign In</button></a>
                     </li>
+                    <!-- Login Modal Starts here -->
+                    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" method="post" class="box">
+                                        <!-- <input type="text" placeholder="Full Name"> -->
+                                        <input type="email" placeholder="Email">
+                                        <input type="password" placeholder="Password">
+                                        <input type="submit">
+                                    </form>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Login Modal ends here -->
                     <li class="nav-item">
                         <a class="nav-link" href="#"><button type="button" class="btn btn-light" id="reg"
-                             data-toggle="modal" data-target="#exampleModal">Register</button></a>
+                             data-toggle="modal" data-target="#RegisterModal">Register</button></a>
+                            </li>
+                            
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -70,7 +98,6 @@
                             </div>
 
                             <!-- Registration Modal ends here -->
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -84,7 +111,7 @@
                     <h6>Use MakeMyCV to impress your employers</h3>
                 </div>
                 <button type="button" class="btn btn-primary btn-lg" id="purbutton"
-                 data-toggle="modal" data-target="#exampleModal">Start Now</button>
+                 data-toggle="modal" data-target="#RegisterModal">Start Now</button>
             </div>
             <!-- Modal -->
             
