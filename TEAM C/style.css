@@ -1,0 +1,38 @@
+#sign {
+    color: rgb(87, 29, 150);
+    outline-color: rgb(87, 29, 150);
+}
+
+#sign:hover {
+    background-color: transparent !important;
+    outline-color: transparent !important;
+}
+
+#reg {
+    color: rgb(87, 29, 150);
+    outline-color: rgb(87, 29, 150);
+}
+
+#reg:hover {
+    background-color: rgb(87, 29, 150) !important;
+    color: whitesmoke;
+}
+
+/* .introduction {
+    height: 100vh;
+    background-color: #rgb(87, 29, 150);
+} */
+
+.centertext {
+    text-align: center;
+}
+
+.intro-head {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#purbutton {
+    background: linear-gradient(45deg,rgb(64, 196, 178) 0,rgb(58, 93, 189) 45%,rgb(87, 29, 150) 100%) !important;
+    outline-color: rgb(87, 29, 150) !important;
+}
