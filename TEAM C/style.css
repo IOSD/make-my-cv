@@ -34,5 +34,95 @@
 
 #purbutton {
     background: linear-gradient(45deg,rgb(64, 196, 178) 0,rgb(58, 93, 189) 45%,rgb(87, 29, 150) 100%) !important;
-    outline-color: rgb(87, 29, 150) !important;
+    outline-color: black !important;
+    /* position: absolute; */
 }
+
+#purbutton:hover {
+    background: linear-gradient(45deg,rgb(51, 173, 157) 0,rgb(38, 67, 148) 45%,rgb(72, 20, 128) 100%) !important;
+    outline-color: rgb(69, 18, 122) !important;
+}
+
+.introduction {
+    background-color: rgb(214, 214, 214);
+    height: 100vh;
+    padding: 10px;
+}
+
+#intro_image {
+    height: 350px;
+    display: block !important;
+    margin-top: 35px;
+}
+
+.inline-heading {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    padding-left: 190px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explain {
+    margin: 20px;
+}
+h3 {
+    margin: 50px;
+}
+
+.box {
+    padding: 40px;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    
+}
+
+.box input[type = "text"], .box input[type = "password"], .box input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid rgb(51, 173, 157);
+    padding:  10px 10px;
+    width: 280px;
+    border-radius: 24px;
+    /* color: black; */
+    /* width: 200px;  */
+    transition: 0.3s;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus,
+.box input[type="email"]:focus {
+    width: 310px;
+    outline:none;
+    border-color: rgb(87, 29, 150);
+}
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(87, 29, 150);
+    padding:  14px 10px;
+    width: 200px;
+    border-radius: 24px;
+    /* color: black; */
+    width: 100px; 
+    transition: 0.3s;
+}
+
+.box input[type = "submit"]:hover {
+    background-color: rgb(87, 29, 150);
+    color: whitesmoke;
+}
+
