@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MakeMyCV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    </head>
+    <body>
+
+        <!-- NAVBAR STARTS HERE -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">MakeMyCV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gotoclass">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><button type="button" class="btn btn-light" id="sign"
+                            data-toggle="modal" data-target="#LoginModal">Sign In</button></a>
+                    </li>
+                    <!-- Login Modal Starts here -->
+                    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" method="post" class="box">
+                                        <!-- <input type="text" placeholder="Full Name"> -->
+                                        <input type="email" placeholder="Email">
+                                        <input type="password" placeholder="Password">
+                                        <input type="submit">
+                                    </form>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Login Modal ends here -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><button type="button" class="btn btn-light" id="reg"
+                             data-toggle="modal" data-target="#RegisterModal">Register</button></a>
+                            </li>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="" method="post" class="box">
+                                            <input type="text" placeholder="Full Name">
+                                            <input type="email" placeholder="Email">
+                                            <input type="password" placeholder="Password">
+                                            <input type="submit">
+                                            </form>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Registration Modal ends here -->
+                </ul>
+            </div>
+        </nav>
+        <!-- NAVBAR ENDS HERE -->
+        
+        <!-- first introduction page is here -->
+        <div class="introduction">
+            <div class="centertext">
+                <div class="intro-head">
+                    <h2>Making your resume is easier than ever</h1>
+                    <h6>Use MakeMyCV to impress your employers</h3>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" id="purbutton"
+                 data-toggle="modal" data-target="#RegisterModal">Start Now</button>
+            </div>
+            <!-- Modal -->
+            
+            <!-- modal ends here -->
+            <img src="resume_image.png" class="img-fluid mx-auto rounded" alt="Responsive Image" id="intro_image">
+        </div>
+        <!-- introduction page ends here -->
+
+        <div class="explain" id="gotoclass">
+            <!-- everything on how we create good resumes for the client is here -->
+                <div class="inline-heading animated bounceInLeft">
+                <h3 class="text-muted text-center">Easy to make</h3>
+                <h3 class="text-muted text-center">Free to use</h3>
+                <h3 class="text-muted text-center">Download in multiple formats</h3>
+                </div>
+            <hr>
+            <!-- everything on how we create good resumes for the client ends here -->
+        </div>  
+        
+        <script>
+            ScrollReveal().reveal('.inline-heading');
+        </script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
