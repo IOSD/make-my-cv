@@ -29,12 +29,24 @@ const todoSchema = new mongoose.Schema({
   text: String,
   done: Boolean
 })
+
+todoSchema.statics.updateDocument = function(id, params, callback){
+  return Todo.findOneAndUpdate({ _id: id },
+                               {
+                                  text: params.text,
+                                  done: params.done
+                               }, function(err, todo){
+                                  callback(todo);
+                               })
+}
  
 todoSchema.statics.all = function(callback){
   return Todo.find({}, function(err, todos){
     callback({todos: todos });
   })
 }
+
+
  
 const Todo = mongoose.model('Todo', todoSchema);
  
