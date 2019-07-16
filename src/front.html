@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>make-my-cv</title>
+     <link rel="stylesheet" type="text/css" href="front.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -31,7 +32,7 @@
 <div>
   <form action="/action_page.php" style="color: white">
 
-    <div style="padding-top: 10px ; padding-left: 15px">
+    <div >
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="First Name.." required>
      
@@ -42,79 +43,181 @@
     <input type="text" id="lname" name="lastname" placeholder="last name.." required>
 
 </div>
-<br>
-<div>
+
   <div>
-    <label for="email_id"">Email Id : </label>
+    <label for="email_id">Email Id  </label>
     <input type="text" id="email_id" name="Email_Id" placeholder="Email Id.." required>
      
-    <label for="phone_number">Phone Number : </label>
+    <label for="phone_number">Phone Number  </label>
     <input type="Number" id="phone_number" name="Phone Number" placeholder="Phone Number..">
     
 </div>
-<br>
+
 <div>
 
-    <label for="country">Country</label>
+    <label for="country" required >Country</label>
     <select id="country" name="country">
       <option value="india">india</option>
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    </select>
+
+      <label for="State" required >Country</label>
+    <select id="State" name="State">
+    
+      <option value="Andhra Pradesh ">1. Andhra Pradesh - Amravati</option>
+      <option value="Arunachal Pradesh">2. Arunachal Pradesh - Itanagar</option>
+     <option value="Assam - Dispur"> 3. Assam - Dispur</option>
+      <option value="Bihar - Patna">4. Bihar - Patna</option>
+     <option value="Chhattisgarh - Atal Nagar (Naya Raipur)"> 5. Chhattisgarh - Atal Nagar (Naya Raipur)</option>
+      <option value="Goa - Panaji">6. Goa - Panaji</option>
+     <option value="Gujarat - Gandhinagar"> 7. Gujarat - Gandhinagar</option>
+     <option value="Haryana - Chandigarh"> 8. Haryana - Chandigarh</option>
+     <option value="Himachal Pradesh - Shimla/Dharamshala"> 9. Himachal Pradesh - Shimla/Dharamshala </option>
+     <option value="Jammu and Kashmir - Srinagar/Jammu"> 10. Jammu and Kashmir - Srinagar/Jammu</option>
+      <option value="Jharkhand - Ranchi">11. Jharkhand - Ranchi</option>
+     <option value="Karnataka - Bengaluru"> 12. Karnataka - Bengaluru</option>
+    <option value="Kerala - Thiruvananthapuram">  13. Kerala - Thiruvananthapuram</option>
+     <option value="Madhya Pradesh - Bhopal"> 14. Madhya Pradesh - Bhopal</option>
+    <option value="Maharashtra - Mumbai">  15. Maharashtra - Mumbai</option>
+     <option value="Manipur - Imphal"> 16. Manipur - Imphal</option>
+      <option value="Meghalaya - Shillong">17. Meghalaya - Shillong</option>
+     <option value="Mizoram - Aizawl"> 18. Mizoram - Aizawl</option>
+<option value="Nagaland - Kohima">19. Nagaland - Kohima</option>
+
+<option value=" Odisha (Orissa) - Bhubaneswar">20. Odisha (Orissa) - Bhubaneswar</option>
+<option value="Punjab - Chandigarh">21. Punjab - Chandigarh</option>
+<option value="Rajasthan - Jaipur">22. Rajasthan - Jaipur</option>
+<option value="Sikkim - Gangtok">23. Sikkim - Gangtok</option>
+
+<option value="Tamil Nadu - Chennaia">24. Tamil Nadu - Chennai</option>
+<option value="Telangana - Hyderabad">25. Telangana - Hyderabad</option>
+
+<option value="Tripura - Agartala">26. Tripura - Agartala</option>
+
+<option value="Uttar Pradesh - Lucknow">27. Uttar Pradesh - Lucknow</option>
+<option value="Uttarakhand - Dehradun">28. Uttarakhand - Dehradun</option>
+<option value="West Bengal - Kolkata">29. West Bengal - Kolkata</option>
+
+    
+    
 </select>
 </div>
-<br>
+
 <div>
 
-      <label for="ename">educational background</label>
-    <input type="text" id="ename" name="educational background" placeholder="educational background..">
+      <label for="ename">Studied 10 Class From</label>
+    <input type="text" id="ename" name="School Name" placeholder="School Name.." required>
+
+    <label for="ename">Starting Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." required>
+
+    <label for="ename">Passing Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." required>
   </div>
-  <br>
+  <div>
+    
+
+    <label for="ename">Studied 12 Class From</label>
+    <input type="text" id="ename" name="School Name" placeholder="School Name.." required>
+
+    <label for="ename">Starting Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." required>
+
+    <label for="ename">Passing Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." required>
+    
+
+</div>
+<div>
+
+    <label for="ename">Graduation course</label>
+    <input type="text" id="ename" name="School Name" placeholder="course..">
+
+    <label for="ename">Graduation From</label>
+    <input type="text" id="ename" name="School Name" placeholder="college Name..">
+
+     <label for="ename">Starting Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." >
+
+    <label for="ename">Passing Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." >
+    </div>
+<div>
+    <label for="ename">Post - Graduation course</label>
+    <input type="text" id="ename" name="School Name" placeholder="course..">
+
+     <label for="ename">Post - Graduation From</label>
+    <input type="text" id="ename" name="School Name" placeholder="college Name..">
+     
+     <label for="ename">Starting Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." >
+
+    <label for="ename">Passing Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." >
+    
+</div>
+<div>
+    <label for="ename">PHD course</label>
+    <input type="text" id="ename" name="School Name" placeholder="course..">
+
+    <label for="ename">PHD From</label>
+    <input type="text" id="ename" name="School Name" placeholder="college Name..">
+
+    <label for="ename">Starting Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." >
+
+    <label for="ename">Passing Year</label>
+    <input type="text" id="ename" name="School Name" placeholder="year.." >
+    
+  </div>
+
   <div>
 
 <label for="qname">Qualifications </label>
     <input type="text" id="qname" name="Qualifications" placeholder="Qualifications..">
   </div>
-<br>
   <div>
 
 
-<label for="wname">Work Experience</label>
-    <input type="text" id="fname" name="Work Experiencee" placeholder="Work Experience..">
+<div class="input-group" style="margin-left: -35px">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="margin-top: -10px;">Work Experiences</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
 </div>
-<br>
-<div>
 
-<label for="pname">Projects</label>
-    <input type="text" id="pname" name="Projects" placeholder="Projects..">
-
+<div class="input-group" style="margin-left: -35px">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="margin-top: -10px;">Projects</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
 </div>
-<br>
-<div>
 
-<label for="sname">Skills</label>
-    <input type="text" id="sname" name="Skills" placeholder="Skills..">
+<div class="input-group" style="margin-left: -35px">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="margin-top: -10px;">Skills</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
 </div>
-<br>
-<div>
 
-<label for="lcname">Licenses and Certificates</label>
-  <button onclick="myFunction()">Try it</button>
-    <script>
-function myFunction() {
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "file");
-  document.body.appendChild(x);
-}
-</script>
-</div>
-<br>
-<div>
 
-<label for="rname">References</label>
-    <input type="text" id="rname" name="References" placeholder="References..">
+
+<div class="input-group"style="margin-left: -35px">
+  <div class="custom-file" class="input-group-append ">
+    <label for="inputGroupFile04" style="">Licenses and Certificates</label>
+    <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+    <label class="custom-file-label" for="inputGroupFile04" style="width: 20%; margin-left: 200px">Choose file</label>
+    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" style="margin-left: -944px;margin-top: -9px;color: white;background-color: #154360;">Upload</button>
+  </div>
 </div>
-<br>
+
+
+<div class="input-group" style="margin-left: -35px">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="margin-top: -10px;">References</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
+</div>
+
 
                                                  
   </form>
