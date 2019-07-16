@@ -14,14 +14,24 @@
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 </head>
-<body>
+<body style="background: url(images/b.jpg) ;background-size: cover">
+  <nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+  
+  <a class="navbar-brand" style="color: white ; padding-left: 400px">PLEASE ENTER YOUR INFORMATION !!!</a>
+  <form class="form-inline">
+    <button type="button"  class="btn btn-primary btn-sm" style="color: white;background-color: #154360;">NEXT !!</button>
+  </form>
+
+</nav>
 <div id="root"></div>
 <div class="container-fluid">
-  <h3 > PLEASE ENTER YOUR INFORMATION !!!</h3>
+
 </div>
 <div>
-  <form action="/action_page.php">
-    <div>
+  <form action="/action_page.php" style="color: white">
+
+    <div style="padding-top: 10px ; padding-left: 15px">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="First Name.." required>
      
@@ -33,7 +43,16 @@
 
 </div>
 <br>
-
+<div>
+  <div>
+    <label for="email_id"">Email Id : </label>
+    <input type="text" id="email_id" name="Email_Id" placeholder="Email Id.." required>
+     
+    <label for="phone_number">Phone Number : </label>
+    <input type="Number" id="phone_number" name="Phone Number" placeholder="Phone Number..">
+    
+</div>
+<br>
 <div>
 
     <label for="country">Country</label>
@@ -80,7 +99,14 @@
 <div>
 
 <label for="lcname">Licenses and Certificates</label>
-    <input type="text" id="lcname" name="Licenses and Certificates" placeholder="Licenses and Certificates..">
+  <button onclick="myFunction()">Try it</button>
+    <script>
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "file");
+  document.body.appendChild(x);
+}
+</script>
 </div>
 <br>
 <div>
@@ -90,15 +116,7 @@
 </div>
 <br>
 
-                                                 <div class="alert alert-success" role="alert">
-                        
-                                                            <button type="button" class="btn btn-success">preview</button>
-                                                            
-                                                            <button type="button" class="btn btn-success">Save</button>
-
-                                                            <button type="button" class="btn btn-success">download</button>
-
-                                                </div> 
+                                                 
   </form>
 </div>
 
