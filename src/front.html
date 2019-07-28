@@ -15,10 +15,41 @@
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 </head>
-<body style="background: url(images/b.jpg) ;background-size: cover">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MAKE_MY_CV</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Templates
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" type="checkbox">Template 1</a>
+          <a class="dropdown-item" href="#" type="checkbox">Template 2</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+    </form>
+  </div>
+</nav>
+  <!--
   <nav class="navbar navbar-dark bg-dark">
   <!-- Navbar content -->
-  
+  <!--
   <a class="navbar-brand" style="color: white ; padding-left: 400px">PLEASE ENTER YOUR INFORMATION !!!</a>
   <form class="form-inline">
     <button type="button"  class="btn btn-primary btn-sm" style="color: white;background-color: #154360;">NEXT !!</button>
@@ -31,27 +62,26 @@
 </div>
 <div>
   <form action="/action_page.php" style="color: white">
-
+-->
     <div >
-    <label for="fname">First Name</label>
+    <label for="fname"><b>First Name<b></label>
     <input type="text" id="fname" name="firstname" placeholder="First Name.." required>
-     
-    <label for="mname">Middle Name</label>
-    <input type="text" id="mname" name="middlename" placeholder="Middle Name..">
-    
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="last name.." required>
+    <label for="lname"><b>Last Name<b></label>
+    <input type="text" id="lname" name="lastname" placeholder="last name.." >
 
 </div>
+<br>
+
 
   <div>
-    <label for="email_id">Email Id  </label>
-    <input type="text" id="email_id" name="Email_Id" placeholder="Email Id.." required>
+    <label for="email_id"><b>Email Id<b>  </label>
+    <input type="email" id="email_id" name="Email_Id" placeholder="Email Id.." required>
      
     <label for="phone_number">Phone Number  </label>
     <input type="Number" id="phone_number" name="Phone Number" placeholder="Phone Number..">
     
 </div>
+<br>
 
 <div>
 
@@ -101,107 +131,113 @@
     
 </select>
 </div>
+<br>
 
 <div>
 
       <label for="ename">Studied 10 Class From</label>
     <input type="text" id="ename" name="School Name" placeholder="School Name.." required>
 
-    <label for="ename">Starting Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." required>
+    <label for="ename"> Year of passing</label>
+    <input type="date" id="ename" name="School Name" placeholder=" Starting year.." required>
+<label for="ename">-</label>
+    <input type="date" id="ename" name="School Name" placeholder=" Passing year.." required>
 
-    <label for="ename">Passing Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." required>
+    
   </div>
+  <br>
+
   <div>
     
 
     <label for="ename">Studied 12 Class From</label>
     <input type="text" id="ename" name="School Name" placeholder="School Name.." required>
 
-    <label for="ename">Starting Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." required>
+    <label for="ename">Year of passing</label>
+    <input type="date" id="ename" name="School Name" placeholder="Starting Year.." required>
 
-    <label for="ename">Passing Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." required>
+    <label for="ename">-</label>
+    <input type="date" id="ename" name="School Name" placeholder="Passing Year.." required>
     
 
 </div>
-<div>
+<br>
 
-    <label for="ename">Graduation course</label>
-    <input type="text" id="ename" name="School Name" placeholder="course..">
+<div>
 
     <label for="ename">Graduation From</label>
     <input type="text" id="ename" name="School Name" placeholder="college Name..">
 
-     <label for="ename">Starting Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." >
+    <label for="ename">Graduation course</label>
+    <input type="text" id="ename" name="School Name" placeholder="course..">
 
-    <label for="ename">Passing Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." >
+     <label for="ename">Year of passing</label>
+    <input type="date" id="ename" name="School Name" placeholder="Starting year.." >
+
+    <label for="ename">-</label>
+    <input type="date" id="ename" name="School Name" placeholder="Passing year.." >
     </div>
+    <br>
+    
 <div>
-    <label for="ename">Post - Graduation course</label>
-    <input type="text" id="ename" name="School Name" placeholder="course..">
-
-     <label for="ename">Post - Graduation From</label>
+    <label for="ename">Post - Graduation From</label>
     <input type="text" id="ename" name="School Name" placeholder="college Name..">
+
+     <label for="ename">Course</label>
+    <input type="text" id="ename" name="School Name" placeholder="course..">
      
-     <label for="ename">Starting Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." >
+     <label for="ename">Year of passing</label>
+    <input type="date" id="ename" name="School Name" placeholder="Starting Year.." >
 
-    <label for="ename">Passing Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." >
+    <label for="ename">-</label>
+    <input type="date" id="ename" name="School Name" placeholder="Passing year.." >
     
 </div>
-<div>
-    <label for="ename">PHD course</label>
-    <input type="text" id="ename" name="School Name" placeholder="course..">
+<br>
 
-    <label for="ename">PHD From</label>
+
+<div>
+    <label for="ename">PHD  From</label>
     <input type="text" id="ename" name="School Name" placeholder="college Name..">
 
-    <label for="ename">Starting Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." >
+    <label for="ename">course</label>
+    <input type="text" id="ename" name="School Name" placeholder="course..">
 
-    <label for="ename">Passing Year</label>
-    <input type="text" id="ename" name="School Name" placeholder="year.." >
+    <label for="ename">Year of passing</label>
+    <input type="date" id="ename" name="School Name" placeholder="Starting Year.." >
+
+    <label for="ename">-</label>
+    <input type="date" id="ename" name="School Name" placeholder="Passing year.." >
     
   </div>
 
-  <div>
-
-<label for="qname">Qualifications </label>
-    <input type="text" id="qname" name="Qualifications" placeholder="Qualifications..">
-  </div>
-  <div>
+<br>
 
 
-<div class="input-group" style="margin-left: -35px">
-  <div class="input-group-prepend">
-    <span class="input-group-text" style="margin-top: -10px;">Work Experiences</span>
-  </div>
-  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
+
+<div >
+   <label for="qname">Work Experience </label>
+    <input type="text" id="qname" name="Work Experience" placeholder="Work Experience..">
+ </div>
+<br>
+<br>
+<div >
+   <label for="qname">Projects </label>
+    <input type="text" id="qname" name="Projects" placeholder="Projects..">
+ 
+
 </div>
+<br>
+<br>
+<div >
+   <label for="qname">Skills </label>
+    <input type="text" id="qname" name="Skills" placeholder="Skills..">
+ </div>
 
-<div class="input-group" style="margin-left: -35px">
-  <div class="input-group-prepend">
-    <span class="input-group-text" style="margin-top: -10px;">Projects</span>
-  </div>
-  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
-</div>
-
-<div class="input-group" style="margin-left: -35px">
-  <div class="input-group-prepend">
-    <span class="input-group-text" style="margin-top: -10px;">Skills</span>
-  </div>
-  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
-</div>
-
-
-
-<div class="input-group"style="margin-left: -35px">
+<br>
+<br>
+<!--
+<div class="input-group">
   <div class="custom-file" class="input-group-append ">
     <label for="inputGroupFile04" style="">Licenses and Certificates</label>
     <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
@@ -209,19 +245,33 @@
     <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" style="margin-left: -944px;margin-top: -9px;color: white;background-color: #154360;">Upload</button>
   </div>
 </div>
+-->
 
-
-<div class="input-group" style="margin-left: -35px">
-  <div class="input-group-prepend">
-    <span class="input-group-text" style="margin-top: -10px;">References</span>
-  </div>
-  <textarea class="form-control" aria-label="With textarea" style="height: 40px"></textarea>
+    <div >
+<p>Licenses and Certificates</p>
+<input type="file" id="myFile" s>
+<script>
+function myFunction() {
+  var x = document.getElementById("myFile");
+  x.disabled = true;
+}
+</script>
 </div>
+<br>
+<div>
 
+
+  
+    <label for="qname">References </label>
+    <input type="text" id="qname" name="Qualification" placeholder="References..">
+ 
+
+  <!--<textarea class="form-control" aria-label="With textarea" style="height: 40px;"></textarea>-->
+</div>
 
                                                  
   </form>
 </div>
-
-</body>
+<br>
+ </body>
 </html>
