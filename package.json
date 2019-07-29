@@ -1,0 +1,32 @@
+{
+  "name": "make-my-cv",
+  "version": "1.0.0",
+  "description": "**Make My CV** is a web application to create a CV by filling the corresponding information in the suitable template that would be selected by the user among various available templates.",
+  "main": "app.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react-app": "^3.1.2",
+    "body-parser": "^1.19.0",
+    "deep-extend": "^0.5.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSWEETY/make-my-cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSWEETY/make-my-cv/issues"
+  },
+  "homepage": "https://github.com/NSWEETY/make-my-cv#readme"
+}
